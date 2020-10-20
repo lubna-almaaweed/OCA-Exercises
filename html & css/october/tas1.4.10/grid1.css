@@ -1,0 +1,36 @@
+.header {  
+  grid-area: h;  
+  background: rgb(24, 5, 5);
+  
+
+}
+
+.menu {  
+  grid-area: m;  
+  background: rgb(3, 99, 43);
+  width: 100%;
+  
+}
+
+.content {  
+  grid-area: c;  
+  background: rgb(255, 158, 46);
+  width :100%%;
+}
+
+.footer {  
+ grid-area: f;  
+ background: rgb(4, 4, 161);
+}
+
+.container {  
+  display: grid;  
+  grid-gap: 5px;      
+  grid-template-columns: repeat(12, 1fr);  
+  grid-template-rows: 50px 350px 50px;  
+  grid-template-areas:  
+      "h h h h h h h h h h h h"  
+      "c c c c c c c c m m m m"  
+      "f f f f f f f f f f f f";}
+
+

@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 1px;
+
+}
+
+
+
+
+
+#container{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+
+
+
+}
+
+.item{
+    margin: 1rem;
+    padding: 1rem;
+    border: solid black 1px;
+    flex-basis: 350px;
+    height: 1rem;
+
+
+}
+.

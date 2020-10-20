@@ -1,0 +1,22 @@
+body{
+    background: rgb(253, 98, 194);
+}
+.block {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    margin-top: auto;
+    overflow : hidden;
+
+  }
+  .container1  .container2  {
+    text-align: center;
+    margin-top: auto;
+    overflow : hidden;
+
+  }
+  .container2 {
+overflow:scroll ;      
+
+  }

@@ -1,0 +1,26 @@
+ body{
+   background:  rgb(252, 249, 93);
+   height: 100%;
+   width: 600px;
+ }
+
+ h1{
+   background: rgb(221, 212, 92);
+   margin: 0px;
+   padding: 0px 20px 20px 20px;
+ }
+.colomn {
+  padding: 20px;
+  background: white;
+  float: left;
+  width: 65%;
+}
+
+.column2  {
+  width: 26%;
+  float: right;
+  padding: 15px;
+  background: rgb(236, 232, 232);
+  display: table;
+  clear: both;
+}  

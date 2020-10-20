@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="style.css">  
+</head>
+  <body>
+    <div class="bg-img">
+        <div class="content">
+          <header>create account</header>
+          <form action="#">
+<div class="field">
+              <span class="fa fa-user"></span>
+              <input type="text" required placeholder="name">
+            </div>
+         
+<div class="field space">
+                <span class="fa fa-phone"></span>
+                <input type="text" class="pass-key" required placeholder="phone number">
+              </div>
+      
+<div class="field space">
+                <span class="fa fa-envelope"></span>
+                <input type="text" class="pass-key" required placeholder="email">
+              </div>
+
+<div class="field space">
+              <span class="fa fa-lock"></span>
+              <input type="password" class="pass-key" required placeholder="Password">
+              <span class="show">SHOW</span>
+            </div>
+
+<form ... onsubmit="return checkForm(this);">
+                ...
+                <p><input type="checkbox" required name="terms"> I aggree to the <u>Terms and Conditions</u> and <u>privacy policy</u></p>
+                </form>
+                <br>
+
+<div class="field">
+              <input type="submit" value="create account">
+            </div>
+    </div>
+    </div>
+    
+<script>
+      const pass_field = document.querySelector('.pass-key');
+      const showBtn = document.querySelector('.show');
+      showBtn.addEventListener('click', function(){
+       if(pass_field.type === "password"){
+         pass_field.type = "text";
+         showBtn.textContent = "HIDE";
+         showBtn.style.color = "#3498db";
+       }else{
+         pass_field.type = "password";
+         showBtn.textContent = "SHOW";
+         showBtn.style.color = "#222";
+       }
+      });
+
+      function check_phone(phone){
+    var regex = /^\(?\d{3}\)?-?\s*-?\d{4}$/;
+    if(regex.test(phone.yourphone.value)){
+  
+   return true;
+    }
+    else{
+      alert("This is not a valid phone number");
+      return false;
+  }
+  }
+      
+  function check_Email(mail){
+    var regex = /^(([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}){1,25})+([;.](([a-zA-Z0-9_\-\.]+)@{[a-zA-Z0-9_\-\.]+0\.([a-zA-Z]{2,5}){1,25})+)*$/;
+    if(regex.test(mail.myemail.value)){
+      return true;
+      alert("Congrats! This is a valid Email email");
+    }
+    else{
+      alert("This is not a valid email address");
+      return false;
+    }
+  }
+      
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var arr = [];
+var even = 0; 
+ var odd = 0; 
+ function summary(){
+    for (var i = 0; i < 11 ; i++) { 
+        arr.push(i);
+        if (i % 2 == 0) 
+            even += arr[i]; 
+        else
+            odd += arr[i]; 
+    }     
+    console.log(even);
+    console.log(odd);
+    }
+    summary();
+
+</script>
+</body>
+</html>

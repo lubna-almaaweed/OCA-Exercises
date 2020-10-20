@@ -1,0 +1,22 @@
+
+    
+    td{            
+      border: solid black 2px;
+
+    }
+
+
+    #box1 , #box3 , #box5 , #box7 , #box9{
+      background: yellow ;
+      margin-top: 100%;
+      
+    }
+
+    #box2 , #box4 , #box6 ,#box8 , #box10{
+        background: green;
+        margin-bottom: 200px
+   
+
+    
+    }
+    

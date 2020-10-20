@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+class person{
+    constructor({firstname, lastname, job}) {
+        this.firstname =firstname;
+        this.lastname =lastname;
+        this.job =job;
+        this.skill=[];
+        person._amount=person._amount  
+    }
+    static get amount (){
+return person._amount  ;
+    }
+    get fullname() {...
+    set fullname(fn) {...
+    learn(skill) {...
+}
+function car(type, color){
+    this.type = type;
+    this.color = color;
+}
+
+car.prototype.getInfo = function(){
+    return this.color + ' ' + this.type + 'car';
+};
+
+var car1 = new car('hyundai', 'red');
+car1.getInfo();
+
+class Animal {
+  constructor(name) {
+    this.speed = 0;
+    this.name = name;
+  }
+  run(speed) {
+    this.speed = speed;
+    alert(`${this.name} runs with speed ${this.speed}.`);
+  }
+  stop() {
+    this.speed = 0;
+    alert(`${this.name} stands still.`);
+  }
+}
+
+let animal = new Animal("My animal");
+
+    </script>
+</body>
+</html>

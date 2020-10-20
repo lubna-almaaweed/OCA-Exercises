@@ -1,0 +1,35 @@
+
+  
+  .menu {  
+    grid-area: m;  
+    background: rgb(3, 99, 43);
+   
+    flex: 50%;
+    height: 100%;
+    padding: 25%;
+  }
+  
+  .content {  
+    grid-area: c;  
+    background: rgb(255, 158, 46);
+  
+    flex: 50%;
+    height: 100%;
+    padding: 25%;
+  }
+   h1{
+     color: aliceblue;
+   }
+ 
+  
+  .container {  
+    display: flex;  
+    height: 100%;
+    padding : 0%
+    grid-template-areas:  
+        "c c c c c c m m m m m m"  
+        "c c c c c c m m m m m m"  
+        "c c c c c c m m m m m m ";
+  
+
+}
