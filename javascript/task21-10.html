@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+                <label for="user"><b>key</b></label>
+                <input type="text" placeholder="Enter Your key" name="name" required>
+               <br>
+                <label for="user"><b>value</b></label>
+                <input type="text" placeholder="Enter Your value" name="name" required>
+
+    
+    <div class="clearfix">
+
+        <button type="submit" id="submit-btn" onclick="saveInLocal()" class="signupbtn">local</button>
+        <button id="save-btn" type="submit" onclick="saveInSession()" class="signupbtn">session </button> ​
+        <button type="reset" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Clear</button> ​
+
+    </div>
+
+    <script>
+        
+    if (!(newUser.allValid())) {
+        var submitBtn = document.querySelector('#save-btn');
+        submitBtn.style = "background:red; cursor: not-allowed;pointer - events: none;color: #c0c0c0;"
+    } else {
+        var submitBtn = document.querySelector('#save-btn');
+        submitBtn.style = "background:#0D0463"
+        sessionStorage.setItem("personObject", JSON.stringify(newUser));
+    }
+
+        localStorage.setItem('key','value');
+        sessionStorage.setItem('key','value');
+        cinsole.log('key','value');
+
+    </script>
+</body>
+</html>
