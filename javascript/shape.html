@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+  width: 50%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #6592CF  ;
+  margin-top: 20px;
+}
+#rect {
+      margin: 75px 42px;
+      width: 300px;
+      height: 150px;
+      background: #243D83;
+      overflow: hidden;
+    }
+    #circle {
+      border-radius: 25px;
+      width: 50px;
+      height: 50px;
+      background: #EEB850;
+      margin: 50px auto;
+      box-shadow: 0 0 0 50px #243D83, 0 0 0 100px #6592CF;
+    }
+    #myDIV2 {
+  width: 50%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #62306D ;
+  margin-top: 40px;
+}
+  
+    
+        #o {
+          width: 300px;
+          height: 200px;
+          margin: 50px;
+        }
+        #o > div {
+          width: 100px;
+          height: 100px;
+          background: #F7EC7D;
+          display: inline-block;
+        }
+        #a {
+          margin: 0 100px;
+          border-radius: 50px 50px 0 0;
+        }
+        #b, #c {
+          border-radius: 0 0 50px 50px;
+        }
+        #c {
+          margin-left: 100px;
+        }
+
+</style>
+</head>
+<body>
+
+
+<button onclick="myFunction()">first shape</button>
+<div id="myDIV">
+    <div id="rect">
+       <div id="circle"></div>
+   </div>
+</div>
+
+<button onclick="myFunction2()"> second shape</button>
+<div id="myDIV2">
+    <div id="o">
+      <div id="a"></div><div id="b"></div><div id="c"></div>
+    </div>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
